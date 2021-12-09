@@ -1,0 +1,12 @@
+@mixin gradient($deg, $from, $to){
+    background: linear-gradient($deg, $from, $to);
+}
+
+#root {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $base-font-weight;
+    font-size: $base-font-size;
+    color: var(--white);
+    animation: gradient 5s ease infinite;
+    @include gradient(90deg, var(--primary), var(--secondary));
+}

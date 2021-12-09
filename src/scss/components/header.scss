@@ -1,0 +1,45 @@
+@import "./navbar";
+
+.Header {
+    padding-top: $nav-height;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__search {
+        color: var(--gray);
+        border-radius: 5px;
+        margin-top: $nav-height/3;
+        background-color: var(--white);
+        padding: 3px 10px;
+        display: flex;
+        align-items: center;
+        #search-field::placeholder {
+            color: var(--gray);
+        }
+    }
+    &__intro {
+        padding-bottom: $nav-height;
+        &__heading {
+            font-size: 5em;
+            span {
+                font-weight: 300;
+            }
+        }
+        &__desc {
+            text-align: center;
+            font-size: 2em;
+        }
+    }
+    &__btn {
+        font-size: 2em;
+        animation: continue 3s linear infinite;
+    }
+}
+
+@keyframes continue {
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-10px)}
+    100% {transform: translateY(0px)}
+}

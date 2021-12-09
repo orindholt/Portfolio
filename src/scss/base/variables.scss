@@ -1,0 +1,19 @@
+$base-font-weight: 300;
+$base-font-size: 16px;
+
+$colors: (
+    "primary": #3A7BD5,
+    "secondary": #86a7d4,
+    "white": #FFFFFF,
+    "gray": #BFBFBF
+);
+
+#root {
+    @each $key, $val in $colors {
+        --#{$key}: #{$val};
+    }
+}
+
+$gradients: (
+    "primary": linear-gradient(90deg,var(--primary), var(--secondary)),
+);
