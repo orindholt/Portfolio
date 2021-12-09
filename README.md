@@ -1,2 +1,2 @@
 # Portfolio
-This is the offical Portfolio of Oliver Rindholt.
+This is the official Portfolio of Oliver Rindholt.
