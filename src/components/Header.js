@@ -1,5 +1,5 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Navbar from "./Navbar";
+import {ImSearch} from "react-icons/im";
 
 const Header = () => {
     return (  
@@ -7,7 +7,7 @@ const Header = () => {
             <Navbar />
             <div className="Header__search">
                 <input type="text" name="search-field" id="search-field" placeholder="search..." />
-                <button type="submit"><FontAwesomeIcon icon="search"/></button>
+                <button type="submit"><ImSearch/></button>
             </div>
             <div className="Header__intro">
                 <h1 className="Header__intro__heading"><span>Oliver</span> Rindholt</h1>

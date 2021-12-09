@@ -10,7 +10,7 @@
     &__search {
         color: var(--gray);
         border-radius: 5px;
-        margin-top: $nav-height/3;
+        margin-top: math.div($nav-height, 3);
         background-color: var(--white);
         padding: 3px 10px;
         display: flex;

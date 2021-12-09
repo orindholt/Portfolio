@@ -1,5 +1,5 @@
 import Category from "./Category";
-import Product from "./Project";
+/* import Product from "./Project"; */
 
 const Projects = () => {
     return (

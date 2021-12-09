@@ -1,5 +1,5 @@
 import Header from "./Header";
-import Projects from "./Projects";
+/* import Projects from "./Projects"; */
 
 const App = () => {
   return (

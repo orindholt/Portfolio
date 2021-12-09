@@ -1,14 +1,13 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {IoCogSharp, IoMenuSharp} from "react-icons/io5"
 
 const Navbar = () => {
 	return (
 		<nav className="Nav">
 			<ul className="Nav__list">
 				<li className="Nav__list__item">
-					<button className="Nav__list__button">about</button>
-				</li>
-				<li className="Nav__list__item">
-					<button className="Nav__list__button">contact</button>
+					<button className="Nav__list__button">
+                        <IoCogSharp />
+                    </button>
 				</li>
 				<li className="Nav__list__item">
 					<button className="Nav__list__button">
@@ -17,13 +16,7 @@ const Navbar = () => {
 				</li>
 				<li className="Nav__list__item">
 					<button className="Nav__list__button">
-						projects
-						<FontAwesomeIcon icon="chevron-left" />
-					</button>
-				</li>
-				<li className="Nav__list__item">
-					<button className="Nav__list__button">
-						<FontAwesomeIcon icon="cog" />
+						<IoMenuSharp />
 					</button>
 				</li>
 			</ul>
