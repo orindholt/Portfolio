@@ -1,0 +1,80 @@
+@import '../components/dropdown';
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+.Home {
+    color: map-get($colors, "primary");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 10vh;
+    &__search {
+        border: 2px solid var(--primary);
+        opacity: 0;
+        box-shadow: $base-box-shadow;
+        color: var(--gray);
+        border-radius: 5px;
+        margin-top: math.div($nav-height, 3);
+        background-color: var(--primary);
+        padding: 3px 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: fadeIn 2s 2s ease-out forwards;
+        transition: .2s;
+        &:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            #search-field {
+                background-color: var(--white);
+                color: var(--primary);
+                &::placeholder {
+                    color: var(--secondary);
+                }
+            }
+        }
+        &:focus-within {
+            transform: scale(1.1);
+            background-color: var(--white);
+            color: var(--primary);
+            #search-field {
+                color: var(--primary);
+                &::placeholder {
+                    color: var(--secondary);
+                }
+            }
+        }
+        #search-field {
+            color: var(--white);
+            transition: .2s;
+            background-color: transparent;
+            &::placeholder {
+                color: var(--gray);
+            }
+        }
+        button {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__intro {
+        padding-bottom: $nav-height;
+        text-align: center;
+        &__heading {
+            animation: fadeIn 2s $cubic forwards;
+            font-size: 7em;
+            font-family: 'Reenie Beanie';
+            font-weight: 300;
+        }
+        &__desc {
+            animation: slideUpAndFadeIn 2s 1s $cubic forwards;
+            font-size: 2em;
+            opacity: 0;
+        }
+    }
+    &__btn {
+        font-size: 2em;
+        animation: continue 3s ease-in-out infinite;
+    }
+}

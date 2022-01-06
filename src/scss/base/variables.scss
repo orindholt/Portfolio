@@ -1,12 +1,25 @@
 $base-font-weight: 300;
 $base-font-size: 16px;
+$base-box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
+$cubic: cubic-bezier(0,.3,.4,1);
+$nav-height: 7vh;
+
+$colorPalettes: (
+    "clean": (#232526, #414345),
+    "management": (#3A7BD5, #86A7D4),
+    "sunset": (#fe8c00, #f83600),
+    "bordeaux": (#a73737, #7a2828)
+);
 
 $colors: (
     "primary": #3A7BD5,
-    "secondary": #86a7d4,
+    "secondary": #86A7D4,
     "white": #FFFFFF,
-    "gray": #BFBFBF
+    "black": #000000,
+    "gray": #E3E3E3
 );
+
+
 
 #root {
     @each $key, $val in $colors {

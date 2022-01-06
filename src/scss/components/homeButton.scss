@@ -1,0 +1,20 @@
+.Home__button {
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid var(--primary);
+  padding: 1% 2em;
+  margin: 0 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  transition: .2s;
+  color: var(--primary);
+  background-color: transparent;
+  opacity: 0;
+  animation: fadeIn 2s 2s ease-out forwards;
+  &:hover {
+    transform: scale(1.15);
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}

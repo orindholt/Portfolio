@@ -4,8 +4,15 @@
 
 // variabels & base
 @import './base/variables';
+@import './base/animation';
 @import './base/base';
 
 // components
-@import './components/header';
-@import './components/projects';
+@import "./components/nav";
+@import "./components/dropdown";
+
+// pages
+@import './pages/home';
+@import './pages/projects';
+@import './pages/about';
+@import './pages/contact'

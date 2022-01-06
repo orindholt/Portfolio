@@ -1,0 +1,35 @@
+@keyframes continue {
+  0% {transform: translateY(0px)}
+  50% {transform: translateY(-10px)}
+  100% {transform: translateY(0px)}
+}
+
+@keyframes slideAndFadeIn {
+  0% {transform: translateY(-40px); opacity: 0}
+  100% {transform: translateY(0); opacity: 1}
+}
+
+@keyframes slideUpAndFadeIn {
+  0% {transform: translateY(40px); opacity: 0}
+  100% {transform: translateY(0); opacity: 1}
+}
+
+@mixin slideIn($height, $name){
+  @keyframes slideIn#{$name} {
+    0% {transform: translateY(-$height)}
+    100% {transform: translateY(0)}
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes blink {
+  0% {opacity: 0}
+  49% {opacity: 0}
+  50% {opacity: 1}
+  99% {opacity: 1}
+  100% {opacity: 0}
+}
